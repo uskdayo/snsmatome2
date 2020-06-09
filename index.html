@@ -3,18 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="./main.js"></script>
   <title>snsmatome</title>
 </head>
 <body>
+  <main>
+    <img id = "main">
+    <nav>
+      <ul>
+        <li id="prev">&lt;</li>
+        <li id="play"></li>
+        <li id="next">&gt;</li>
+      </ul>
+    </nav>
+    
+    <ul class="thumbnails">
+    </ul>
+  </main>
   <div class="header">
-    <div class="header-logo">
-      SNSまとめ
-    </div>
-      <ul class="header__menu active">
+    <ul class="header__menu active">
         <li class="header__menu__list1">
           <a class="header__menu__list1__btn" >
           profile
@@ -66,5 +74,8 @@
       </li>
     </ul>
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>
