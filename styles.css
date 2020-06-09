@@ -9,19 +9,78 @@ h1,h2,h3,h4,h5,h6,p {
   margin: 0;
 }
 
-.header{
-  height: 400px;
-  width: 100%;
+main{
+  heigh: 400px;
+  text-align: center;
 }
 
-.header-logo{
+img{
+  vertical-align: bottom;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#main{
   height: 400px;
-  font-size: 50px;
-  line-height: 200px;
-  margin: 15px;
+  margin-bottom: 8px;
+}
+
+nav{
+  margin: -200px 0 150 0;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li{
+  cursor: pointer;
+}
+
+#prev,
+#next:hover{
+  background: #f8f8f8;
+}
+
+#play{
+  width: 140px;
+}
+
+#prev,
+#next{
+  width: 60px;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 4px;
   text-align: center;
-  color: white;
-  background-image:url("https://pbs.twimg.com/profile_banners/1246256686983073792/1585966634/1500x500");
+  user-select: none;
+}
+
+.thumbnails{
+  display: grid;
+  grid-template-columns: repeat(20 ,50px);
+  gap: 5px;
+}
+
+.thumbnails li{
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.thumbnails li:hover,
+.thumbnails li.current{
+  opacity: 1;
+}
+
+.thumbnails img{
+  height: 0px;
 }
 
 .header__menu{
@@ -119,7 +178,7 @@ ul{
   width: 100%;
 }
 .container {
-  margin: 50px 10px 10px 10px;
+  margin: -40px 10px 10px 10px;
   width: 100%;
 }
 ul.menu {
