@@ -16,6 +16,7 @@ main{
 
 img{
   vertical-align: bottom;
+  object-fit: contain;
 }
 
 ul{
@@ -223,4 +224,16 @@ ul.contents li {
 }
 ul.contents li.show {
   display: block;
+}
+
+.contents a{
+  text-decoration: none;
+  color: black;
+  line-height: 100px;
+}
+
+.content img{
+  height: 100px;
+  width: 100px;
+
 }
